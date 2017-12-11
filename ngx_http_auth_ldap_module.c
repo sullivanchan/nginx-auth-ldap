@@ -46,7 +46,7 @@
 #endif
 // TODO: do the same stuff for MSVC and/or other compilers
 
-# retrieve former openssl version since it changed in nginx src https://github.com/nginx/nginx/blob/release-1.12.1/src/event/ngx_event_openssl.h#L36-L39
+// retrieve former openssl version since it changed in nginx src https://github.com/nginx/nginx/blob/release-1.12.1/src/event/ngx_event_openssl.h#L36-L39
 #if (defined LIBRESSL_VERSION_NUMBER && OPENSSL_VERSION_NUMBER == 0x1000107fL)
 #undef OPENSSL_VERSION_NUMBER
 #define OPENSSL_VERSION_NUMBER  0x20000000L
